@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/pagevideo.css"/>
+    <title>NabeelTech</title>
+</head>
+<body>
+     <!-- Video Source -->
+  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+  <section class="showcase">
+      <header>
+        <div class="logo_section">
+         <img src="./img/nabeel-logo.jpg"/>    
+        <h2 class="logo">Nabeel Tech</h2>
+        </div>
+        <div class="toggle"></div>
+      </header>
+    <video src="./video/Welcome.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2 class="movetext">Never Stop To </h2> 
+      <h3 class="movetext">Exploring The OPPORTUNITIES</h3>
+      <p class="movetext">we offering Software Development Solutions That can tailored to suit Any Budget And Business, We Deal With Web Development, Mobile Development, Digital Marketing , CMS,LMS And Various Management Systems</p>
+      <a href="#">Explore</a>
+    </div>
+    <ul class="social">
+      <li><a href="https://www.facebook.com/celestin.bonaventure" target="_blank"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="https://twitter.com/NabeelJ95636954"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="https://www.linkedin.com/in/nabeel-javed-02b715b8/"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="./Home/home.html">Home</a></li>
+      <!-- <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li> -->
+    </ul>
+  </div>
+  <script>
+       const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+  </script>
+</body>
+</html>
