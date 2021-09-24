@@ -1,5 +1,8 @@
 const u_form = document.getElementById('form')
 const alert = document.getElementById('alert')
+const newsForm = document.getElementById('newsletter')
+
+
 
 class Email {
     constructor(name, email, subject, message) {
@@ -14,7 +17,7 @@ class UI{
     static displayMessage(message, className){
         alert.className = `alert alert-${className}`;
         alert.appendChild(document.createTextNode(message));
-        setTimeout(() => document.querySelector('.alert').remove(), 8000);  
+        setTimeout(() => document.querySelector('.alert').remove(), 6000);  
     }
 
     static clearFields(){
@@ -75,8 +78,15 @@ u_form.addEventListener('submit',
                 
                 
             }
-
-
         }
 )
+
+newsForm.addEventListener('submit', function(e){
+        e.preventDefault()
+        newsForm['email'].value = ''
+        const timer = document.getElementById('sentletter')
+        timer.style.display = 'block'
+        setTimeout(() => location.reload(), 3000); 
+                   
+})
 
