@@ -37,13 +37,16 @@ u_form.addEventListener('submit',
             var subject = document.getElementById('subject').value
             var message = document.getElementById('message').value
             var name = document.getElementById('name').value
+            var loading = document.getElementById('loader')    
+
+            loading.style.display = 'block'
 
             if(name === '' || email === '' || subject === ''  || message === '') {
                 UI.displayMessage('Please fill in all fields', 'danger');
                 UI.clearFields()
+                loading.style.display = 'none'
+                return
               } else {
-
-                console.log(message)
 
                 const obj = new Email(name, email, subject, message);
 
@@ -58,6 +61,7 @@ u_form.addEventListener('submit',
                 .then(res => {
                     if(res.error == 'false'){
                         UI.displayMessage('Email Has been Sent', 'success');
+                        loading.style.display = 'none'
                         UI.clearFields()   
                     }
                 })
