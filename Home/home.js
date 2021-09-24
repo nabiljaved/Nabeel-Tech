@@ -14,7 +14,7 @@ class UI{
     static displayMessage(message, className){
         alert.className = `alert alert-${className}`;
         alert.appendChild(document.createTextNode(message));
-        setTimeout(() => document.querySelector('.alert').remove(), 4000);  
+        setTimeout(() => document.querySelector('.alert').remove(), 8000);  
     }
 
     static clearFields(){
@@ -42,13 +42,36 @@ u_form.addEventListener('submit',
                 UI.displayMessage('Please fill in all fields', 'danger');
                 UI.clearFields()
               } else {
+
+                console.log(message)
+
+                const obj = new Email(name, email, subject, message);
+
+                fetch('https://apinodemailer.herokuapp.com/mail-route', {
+                method: 'post',
+                headers: {
+                        'Accept': 'application/json, text/plain, */*',
+                        'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(obj)
+                }).then(res => res.json())
+                .then(res => {
+                    if(res.error == 'false'){
+                        UI.displayMessage('Email Has been Sent', 'success');
+                        UI.clearFields()   
+                    }
+                })
+                .catch(error => {
+                    if(error.error == 'true'){
+                        UI.displayMessage('Please Try Again', 'danger');
+                        UI.clearFields()   
+                    }
+                })
+
                 
-                const obj = new Email(name, email, message, subject);
-                console.log(obj)
-                UI.displayMessage('Email Has been Sent', 'success');
-                UI.clearFields()
-    
+                
             }
+
 
         }
 )
