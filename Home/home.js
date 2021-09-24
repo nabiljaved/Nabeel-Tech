@@ -50,7 +50,6 @@ u_form.addEventListener('submit',
     
             }
 
-
         }
 )
 
