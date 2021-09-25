@@ -1,0 +1,57 @@
+LIGHT BOX:
+
+1==download lightbox from https://lokeshdhakar.com/projects/lightbox2/ 
+2==goto src folder copy files from js, image and css to your bootstrap js, image and css folder.
+3==download jquery compressed and place that file in bootstrap js. 
+4==add these two script files in lower body area 
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/lightbox.js" type="text/javascript"></script>
+5===and a style sheet in head 
+<link href="css/lightbox.css" rel="stylesheet"/>
+
+5=== copy and paste this code under col-md-3
+<div class="thumbnail">
+<a href="images/2.jpg" data-lightbox="gallery" data-title="Arang Kel, Neelum Valley."><img src="images/2.jpg" class="img-fluid" alt="image one"></a>
+<p class="caption">1. Arang Kel, Neelum Valley.</p>
+</div>
+
+
+Parallax Scrolling Effect For Your Websites:
+
+1===make container in body and give it css.
+.container{
+max-width:960px;
+margin: 0 auto;
+background:#f9f9f9;
+font-size:24px;
+padding:25px;
+}
+
+<p>lorem lipsum</p>
+<div class="container"></div>
+<p>lorem lipsum</p>
+
+2====download the file from http://pixelcog.github.io/parallax.js/ and put in your bootstrap js folder
+3===add these scripts in your body tag
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/parallax.min.js"></script>
+4==put the code between 
+<div class="container">
+<div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="/path/to/image.jpg"></div>
+</div>
+5===apply the css 
+.parallex{
+min-height:500px;--------(you can remove height to use padding of paragraph)
+background:transparent;
+padding:100px 35px;--------(optional for text)
+}
+
+6== if you want add text in image put a paragraph between div class="parallex"
+<p class="info></div>
+7==give info some css. 
+.info{
+z-index:2; 
+position:relative;
+
+}
+

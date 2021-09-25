@@ -1,0 +1,35 @@
+#top{
+background-color:green; 	
+}
+
+.font{
+color:white;	
+}
+
+#topcontainer{
+    width:100%;
+	padding:50px; 
+	background-image: url("../images/hall.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	padding-top:100px; 
+	
+}
+
+.box{
+width:100%;
+max-width:600px; 
+height:400px; 
+background-color:white;
+margin: 0 auto;
+padding-top:100px;
+text-align: center;
+vertical-align: middle;
+line-height: 90px; 
+background-color:tomato;
+}
+
+body{
+background:none;	
+}

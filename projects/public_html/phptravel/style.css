@@ -1,0 +1,150 @@
+
+
+
+
+.navbar-brand{
+  font-size:1.6em;
+  }
+  
+  #topcontainer{
+  background-image:url(images/1.jpg);
+  height:100vh;
+  width:100vw;
+  background-size:100% 100%;
+  }
+  
+  #toprow{
+  margin-top:100px;
+  text-align:center;
+  }
+  
+  #toprow h1{
+  font-size:300%;
+  color:white;
+  font-weight:bold;
+  }
+  
+  .marginTop{
+  margin-top:10px;
+  }
+  
+  form{
+    margin-top:20px;
+  }
+  
+  .center{
+  text-align:center;
+  }
+  
+  .title{
+  margin-top:100px;
+  font-size:300%;  
+  }
+  
+  .box{
+  background-color:yello;
+  border:1px solid gre;
+  }
+  
+  #middlecontainer{
+  height:100vh;
+  width:100vw;
+  background-color:lightgrey;
+  
+  }
+  
+  @media screen and (max-width:768px){
+		ul li{
+		border:1px solid grey;
+		background-color:black;
+		opacity:.5;
+		}
+		li a{
+		color:white !important;
+		}
+  }
+	
+section{
+	width:100vw; 
+	height:100vh; 
+	background-color:lightblue;
+	padding:50px; 
+}
+
+#contain{
+	margin-top:100px;
+}
+
+#signupform{
+width:100%; 
+max-width:600px; 
+margin:0 auto;
+}
+
+#erorr{
+	color:red;
+	text-align:center;
+	font-weight:bold;
+	font-size:15px;
+	margin-top:10px;
+}
+#succ{
+	color:green;
+	text-align:center;
+	font-weight:bold;
+	font-size:15px;
+	margin-top:10px;
+}
+
+
+label{
+background-color:#337AB7; 
+color:yellow;
+margin-top:8px;	
+margin-right:8px;	
+}
+
+ header{
+text-align:center;
+padding:32px;
+}
+
+.thumbnail{
+height:100%;
+width:100%;
+overflow:hidden;
+}
+
+img{
+-webkit-transition:all 0.5s ease;
+}
+
+img:hover{
+transform:scale(1.4);
+}
+
+header{
+text-align:center;
+padding:32px;
+}
+
+.parallax{
+min-height:500px;
+background:transparent;
+}
+
+#fluid{
+background:#f9f9f9;
+font-size:24px;
+padding:25px;
+}
+
+#fluid h1{
+text-align:center;
+color:blue;
+font-size:2em
+}
+
+
+
+ 

@@ -1,0 +1,22 @@
+.whatsup{
+    position: fixed;
+    right: 10px;
+    bottom: 5%;
+}
+
+.whatsup h5{
+    color: white;
+    background: #20b20f;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+@media(max-width:970px){
+    #videotag{
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
